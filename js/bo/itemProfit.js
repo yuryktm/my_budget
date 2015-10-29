@@ -1,4 +1,4 @@
-define('itemProfit',['bo/item','common/helper'], function(Item, helper){
+define('itemProfit',['./bo/item','./common/helper'], function(Item, helper){
 
 var ItemProfit = (function(_super){
     inherits(ItemProfit, _super);

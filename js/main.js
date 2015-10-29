@@ -1,5 +1,5 @@
-require(['bo/itemProfit'],
-    function(itemProfit){
+require(['./bo/itemProfit','./bo/item','./common/helper'],
+    function(itemProfit, item, helper){
 
         var array = [];
 
