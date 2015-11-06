@@ -1,22 +1,46 @@
-requirejs.config({
-    //baseUrl: 'lib',
+require.config({
+
     paths: {
-       // app: '../js'
-    }
+       // 'domReady': '../lib/requirejs-domready/domReady',
+        'angular': '../lib/angular.min'
+    },
+
+    shim: {
+        'angular': {
+            exports: 'angular'
+        }
+    },
+
+    // запустить приложение
+    //deps: ['./bootstrap']
 });
 
-require(['./budgetModel'],
+
+
+require(['./budgetModel', 'angular'],
    function(budgetModel, angular){
 
        var app = angular.module('app', []);
        app.controller('BudgetController', function($scope) {
            $scope.test= "John";
-          // $scope.lastName= "Doe";
+
+           $scope.rateSum = -11111;
+           $scope.profitSum = 9999;
+           $scope.month = "Ноябрь";
+
+
+
+           //budgetModel.init();
+           //budgetModel.addItemProfit("sdfg", 444);
+           //budgetModel.print();
+
+
+
+
+
        });
 
-        //budgetModel.init();
-        //budgetModel.addItemProfit("sdfg", 444);
-        //budgetModel.print();
+
 
 
 

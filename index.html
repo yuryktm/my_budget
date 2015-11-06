@@ -1,12 +1,31 @@
-<!DOCTYPE html ng-app="app">
-<html lang="en">
-<head>
+<!DOCTYPE html>
+<html ng-app="app">
     <meta charset="UTF-8">
     <title>Мой Бюджет</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script data-main="js/main" src="lib/require.js"></script>
 </head>
 <body ng-controller="BudgetController">
-    <h1>Start</h1>
-    <div> {{test}}</div>
+<div><h1>Мой бюджет</h1></div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center" >
+                        <h3 class="panel-title">{{month}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div>{{profitSum}}</div>
+                        <div> {{rateSum}}</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
 </body>
 </html>
