@@ -41,12 +41,12 @@ require(['./budgetModel', 'angular'],
        });
 
 
-       angular.module('app', []).filter('testFilter', function(){
-
-           return function (item){
-                return item;
-           };
-       });
+       //angular.module('app', []).filter('testFilter', function(){
+       //
+       //    return function (item){
+       //         return item;
+       //    };
+       //});
 
 
 
